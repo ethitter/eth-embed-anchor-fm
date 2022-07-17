@@ -2,12 +2,12 @@ include:
   - remote: https://git-cdn.e15r.co/gitlab/ci/wordpress/-/raw/main/plugins/default.yml
 
 # Plugin does not support 5.6 or 7.0.
-PHPunit:PHP7.0:MySQL:
-  rules:
-    - if: true
-      when: never
-
 PHPunit:PHP5.6:MySQL:
   rules:
-    - if: true
+    - if: $PIPELINE_PHP_5_6 != '1'
+      when: never
+
+PHPunit:PHP7.0:MySQL:
+  rules:
+    - if: $PIPELINE_PHP_7_0 != '1'
       when: never
