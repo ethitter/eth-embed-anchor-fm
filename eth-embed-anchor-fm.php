@@ -27,3 +27,23 @@
  */
 
 namespace ETH_Embed_Anchor_FM;
+
+/**
+ * Perform setup actions after plugin loads.
+ *
+ * @return void
+ */
+function action_plugins_loaded() {
+	load_plugin_textdomain(
+		'eth-embed-anchor-fm',
+		false,
+		dirname( plugin_basename( __FILE__ ) ) . '/languages/'
+	);
+}
+add_action( 'plugins_loaded', __NAMESPACE__ . '\action_plugins_loaded' );
+
+/**
+ * Load plugin classes.
+ */
+require_once __DIR__ . '/inc/class-plugin.php';
+Plugin::get_instance();

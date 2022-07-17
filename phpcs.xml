@@ -26,7 +26,9 @@
 	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
 	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
 	<config name="minimum_supported_wp_version" value="4.7"/>
-	<rule ref="WordPress" />
+	<rule ref="WordPress">
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+	</rule>
 	<rule ref="WordPressVIPMinimum" />
 	<rule ref="WordPress-VIP-Go" />
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
