@@ -161,7 +161,7 @@ class Plugin {
 				'src'    => null,
 				'url'    => null,
 				'width'  => '400px',
-				'height' => '102px'
+				'height' => '102px',
 			],
 			$attrs,
 			self::SHORTCODE_TAG
