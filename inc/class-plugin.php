@@ -47,7 +47,7 @@ class Plugin {
 	public static function get_instance(): Plugin {
 		if ( ! is_a( self::$_instance, __CLASS__ ) ) {
 			self::$_instance = new self();
-			self::$_instance->setup();
+			self::$_instance->_setup();
 		}
 
 		return self::$_instance;
@@ -56,14 +56,16 @@ class Plugin {
 	/**
 	 * Silence is golden!
 	 */
-	private function __construct() {}
+	private function __construct() {
+		// Add nothing here.
+	}
 
 	/**
 	 * Register hooks.
 	 *
 	 * @return void
 	 */
-	private function setup(): void {
+	private function _setup(): void {
 		add_action( 'init', [ $this, 'action_init' ] );
 		add_filter(
 			'oembed_fetch_url',
