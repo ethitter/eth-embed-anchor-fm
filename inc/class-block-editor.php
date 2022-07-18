@@ -31,11 +31,12 @@ class Block_Editor {
 	 * @return void
 	 */
 	public function action_enqueue_block_editor_assets(): void {
-		$asset_data = require dirname( __FILE__, 2 )
+		$asset_data   = require dirname( __FILE__, 2 )
 			. '/assets/build/index.asset.php';
+		$asset_handle = 'eth-embed-anchor-fm-block-editor';
 
 		wp_enqueue_script(
-			'eth-embed-anchor-fm-block-editor',
+			$asset_handle,
 			plugins_url(
 				'assets/build/index.js',
 				dirname( __FILE__, 2 )
@@ -44,6 +45,25 @@ class Block_Editor {
 			$asset_data['dependencies'],
 			$asset_data['version'],
 			true
+		);
+
+		// TODO: localize with necessary names.
+		// TODO: include `anchor-fm-inc` in localization.
+		wp_localize_script(
+			$asset_handle,
+			'ethEmbedAnchorFm',
+			[
+				'name'     => 'anchor-fm-inc',
+				'patterns' => [
+					Plugin::get_instance()->url_regex,
+				],
+			]
+		);
+
+		wp_set_script_translations(
+			$asset_handle,
+			'eth-embed-anchor-fm',
+			dirname( __FILE__, 2 ) . '/languages'
 		);
 	}
 }
