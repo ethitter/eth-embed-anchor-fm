@@ -1,5 +1,3 @@
-/* global ethEmbedAnchorFm */
-
 import { Path, SVG } from '@wordpress/components';
 import { addFilter, removeFilter } from '@wordpress/hooks';
 import { __ } from '@wordpress/i18n';
