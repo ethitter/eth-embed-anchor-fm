@@ -44,5 +44,5 @@ trait Singleton {
 	 *
 	 * @return void
 	 */
-	abstract function _setup(): void;
+	abstract protected function _setup(): void;
 }

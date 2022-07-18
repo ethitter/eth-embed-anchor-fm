@@ -46,7 +46,7 @@ class Plugin {
 	 *
 	 * @return void
 	 */
-	private function _setup(): void {
+	protected function _setup(): void {
 		add_action( 'init', [ $this, 'action_init' ] );
 
 		add_filter(
