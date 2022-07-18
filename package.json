@@ -26,6 +26,7 @@
 		"grunt-wp-readme-to-markdown": "^2.1.0"
 	},
 	"dependencies": {
+		"@wordpress/components": "^19.15.0",
 		"@wordpress/hooks": "^3.13.0",
 		"@wordpress/i18n": "^4.13.0"
 	}

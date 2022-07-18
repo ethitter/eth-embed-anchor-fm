@@ -47,19 +47,6 @@ class Block_Editor {
 			true
 		);
 
-		// TODO: localize with necessary names.
-		// TODO: include `anchor-fm-inc` in localization.
-		wp_localize_script(
-			$asset_handle,
-			'ethEmbedAnchorFm',
-			[
-				'name'     => 'anchor-fm-inc',
-				'patterns' => [
-					Plugin::get_instance()->url_regex,
-				],
-			]
-		);
-
 		wp_set_script_translations(
 			$asset_handle,
 			'eth-embed-anchor-fm',
