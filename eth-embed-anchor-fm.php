@@ -45,5 +45,9 @@ add_action( 'plugins_loaded', __NAMESPACE__ . '\action_plugins_loaded' );
 /**
  * Load plugin classes.
  */
+require_once __DIR__ . '/inc/trait-singleton.php';
 require_once __DIR__ . '/inc/class-plugin.php';
+require_once __DIR__ . '/inc/class-block-editor.php';
+
 Plugin::get_instance();
+Block_Editor::get_instance();

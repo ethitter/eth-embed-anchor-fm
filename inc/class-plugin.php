@@ -11,6 +11,8 @@ namespace ETH_Embed_Anchor_FM;
  * Class Plugin.
  */
 class Plugin {
+	use Singleton;
+
 	/**
 	 * Regex pattern to match URL to be oEmbedded.
 	 *
@@ -40,39 +42,11 @@ class Plugin {
 	private const SHORTCODE_TAG = 'eth_anchor_fm';
 
 	/**
-	 * Singleton.
-	 *
-	 * @var Plugin
-	 */
-	private static $_instance = null;
-
-	/**
-	 * Implement singleton.
-	 *
-	 * @return Plugin
-	 */
-	public static function get_instance(): Plugin {
-		if ( ! is_a( self::$_instance, __CLASS__ ) ) {
-			self::$_instance = new self();
-			self::$_instance->_setup();
-		}
-
-		return self::$_instance;
-	}
-
-	/**
-	 * Silence is golden!
-	 */
-	private function __construct() {
-		// Add nothing here.
-	}
-
-	/**
 	 * Register hooks.
 	 *
 	 * @return void
 	 */
-	private function _setup(): void {
+	protected function _setup(): void {
 		add_action( 'init', [ $this, 'action_init' ] );
 
 		add_filter(
