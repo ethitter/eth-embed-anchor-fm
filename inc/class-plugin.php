@@ -41,22 +41,6 @@ class Plugin {
 	 */
 	private const SHORTCODE_TAG = 'eth_anchor_fm';
 
-	public function __get( $name ): ?string {
-		if ( 'url_regex' === $name ) {
-			return self::OEMBED_FORMAT;
-		}
-
-		return null;
-	}
-
-	public function __set( string $name, string $value ): bool {
-		return false;
-	}
-
-	public function __isset( $name ): bool {
-		return 'url_regex' === $name;
-	}
-
 	/**
 	 * Register hooks.
 	 *
