@@ -1,7 +1,7 @@
 === ETH Embed Anchor.fm ===
 Contributors: ethitter
 Donate link: https://ethitter.com/donate/
-Tags: anchor.fm, oembed, embed, shortcode
+Tags: anchor.fm, oembed, embed, shortcode, podcast, audio
 Requires at least: 4.7
 Tested up to: 6.0
 Stable tag: 1.0

@@ -3,7 +3,7 @@
   "description" : "Add Anchor.fm oEmbed support to WordPress.",
   "homepage"    : "https://ethitter.com/",
   "type"        : "wordpress-plugin",
-  "keywords"    : [ "anchor.fm", "oembed", "embed", "shortcode" ],
+  "keywords"    : [ "anchor.fm", "oembed", "embed", "shortcode", "podcast", "audio" ],
   "license"     : "GPL-2.0+",
   "authors"     : [
     {
