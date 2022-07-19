@@ -24,8 +24,10 @@ addFilter( filterTag, namespace, ( settings, name ) => {
 			</SVG>
 		),
 		keywords: [
-			__( 'podcast', 'eth-embed-anchor-fm' ),
+			__( 'audio', 'eth-embed-anchor-fm' ),
 			__( 'embed', 'eth-embed-anchor-fm' ),
+			__( 'oembed', 'eth-embed-anchor-fm' ),
+			__( 'podcast', 'eth-embed-anchor-fm' ),
 		],
 		description: __( 'Embed an Anchor.fm podcast.', 'eth-embed-anchor-fm' ),
 		patterns: [ /^https:\/\/anchor\.fm\/[^\/]+\/episodes\/.+/i ],

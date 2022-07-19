@@ -1,19 +1,23 @@
 === ETH Embed Anchor.fm ===
 Contributors: ethitter
 Donate link: https://ethitter.com/donate/
-Tags: anchor.fm, oembed, embed, shortcode
+Tags: anchor.fm, oembed, embed, shortcode, podcast, audio
 Requires at least: 4.7
 Tested up to: 6.0
-Stable tag: 0.1
+Stable tag: 1.0
 Requires PHP: 7.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add Anchor.fm oEmbed support to WordPress.
+Allow embedding Anchor.fm podcast episodes in your content.
 
 == Description ==
 
-Add Anchor.fm oEmbed support to WordPress.
+Adds [Anchor.fm](https://anchor.fm/) as an oEmbed provider, allowing you to embed a podcast episode in content simply by pasting its URL.
+
+For ease of discovery, this plugin also adds to the block editor a variation of the embed block specifically for Anchor.fm.
+
+For additional flexibility, a shortcode is provided, which can be used with the iframe that Anchor.fm provides.
 
 == Installation ==
 
@@ -31,5 +35,5 @@ Yes, the plugin also provides the `eth_anchor_fm` shortcode. It accepts three ar
 
 == Changelog ==
 
-= 0.1 =
+= 1.0 =
 * Initial public release

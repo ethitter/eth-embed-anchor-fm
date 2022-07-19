@@ -2,10 +2,10 @@
 # This file is distributed under the same license as the ETH Embed Anchor.fm package.
 msgid ""
 msgstr ""
-"Project-Id-Version: ETH Embed Anchor.fm 0.1\n"
+"Project-Id-Version: ETH Embed Anchor.fm 1.0\n"
 "Report-Msgid-Bugs-To: "
 "https://wordpress.org/support/plugin/eth-embed-anchor-fm\n"
-"POT-Creation-Date: 2022-07-17 21:22:04+00:00\n"
+"POT-Creation-Date: 2022-07-19 02:48:11+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -34,7 +34,10 @@ msgid "https://ethitter.com/plugins/eth-embed-anchor-fm/"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Add Anchor.fm oEmbed support to WordPress."
+msgid ""
+"Adds <a href=\"https://anchor.fm/\">Anchor.fm</a> as an oEmbed provider, "
+"allowing you to embed a podcast episode in content simply by pasting its "
+"URL."
 msgstr ""
 
 #. Author of the plugin/theme
