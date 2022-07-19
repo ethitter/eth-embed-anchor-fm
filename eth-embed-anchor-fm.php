@@ -2,7 +2,7 @@
 /**
  * Plugin Name: ETH Embed Anchor.fm
  * Plugin URI: https://ethitter.com/plugins/eth-embed-anchor-fm/
- * Description: Add Anchor.fm oEmbed support to WordPress.
+ * Description: Adds <a href="https://anchor.fm/">Anchor.fm</a> as an oEmbed provider, allowing you to embed a podcast episode in content simply by pasting its URL.
  * Version: 1.0
  * Author: Erick Hitter
  * Author URI: https://ethitter.com/
