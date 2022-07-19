@@ -13,7 +13,7 @@ Allow embedding Anchor.fm podcast episodes in your content.
 
 == Description ==
 
-Adds Anchor.fm as an oEmbed provider, allowing you to embed a podcast episode in a post simply by pasting its URL.
+Adds Anchor.fm as an oEmbed provider, allowing you to embed a podcast episode in content simply by pasting its URL.
 
 For ease of discovery, this plugin also adds to the block editor a variation of the embed block specifically for Anchor.fm.
 
